@@ -43,6 +43,55 @@ ol {
 
 }
 
+.grid {
+    background-color: rgb(128, 87, 128); 
+    text-align: center; 
+    color:rgba(235,235,235,1); 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 12pt; 
+    font-weight: 100;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+}
+
+/* .item {
+
+} */
+
+.item2 {
+    justify-items: center;
+    place-content: center;
+    grid-row: span 2;
+}
+
+/* #dobro {
+
+
+} */
+
+img {
+    
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+#banner {
+    grid-row: 4;
+    grid-column: span 3;
+    vertical-align: top;
+}
+
+#vid {
+    grid-row: 5;
+    place-content: center;
+    place-items: center;
+    grid-column: span 3;
+
+}
+
 .exemplo {
     color: rgba(235,235,235,1); 
     font-family: 'Roboto', sans-serif;
