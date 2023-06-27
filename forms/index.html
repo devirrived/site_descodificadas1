@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link rel="shortcut icon" href="img/artevamos.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="nome">Nome*:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+        <br>
+        <br>
+        <label for="email">Email*:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+        <br>
+        <br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="(XX) 99999-0000">
+        <br>
+        É Whatsapp? *
+        <br>
+        <input type="radio" name="whatsapp" id="whatsapp" value="sim"> Sim, entrar em contato por mensagem no Whatsapp
+        <br>
+        <input type="radio" name="whatsapp" id="whatsapp" value="nao"> Não, entrar em contato por ligação
+        <br>
+        <input type="radio" name="whatsapp" id="whatsapp" value="outro"> Desejo receber contato apenas por e-mail
+        <br>
+        <br>
+        Tipo de serviço que deseja contratar:*
+        <br>
+        <input type="checkbox" name="edicaoimg" value="edicaoimg">Edição de imagem<br>
+        <input type="checkbox" name="edicaovid" value="edicaovid">Edição de vídeo<br>
+        <input type="checkbox" name="texto" value="texto">Texto (Criação, revisão, tradução e/ou legendagem)<br>
+        <input type="checkbox" name="ti" value="ti">T.I. (Criação de site, otimização e/ou SEO)<br>
+        <input type="checkbox" id = "outro" name = "interesse" value = "outro">
+        <label for="other">Outro: </label>
+        <input type="text" id ="otherValue" name="outro" placeholder="Insira o nome do serviço">
+        <br>
+        <br>
+        <label for="mensagem">Briefing / Descrição do projeto*:</label>
+        <br>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Descreva os detalhes do projeto e a quantidade." required></textarea>
+        <br>
+        <br>
+        Se necessário, envie arquivos de exemplo: <input type="file" name="arquivos" id="arquivos" multiple>
+        <br>
+        <br>
+        Selecione a cor principal da identidade visual, se houver: <input type="color" name="favcor" value="#B832B4">
+        <br>
+        <br>
+        Qual é a prioridade do projeto?
+        <br> Sem pressa <input type="range" name="prioridade" id="prioridade" min="1" max="5"> Muito urgente
+        <br>
+        <br>
+        Prazo de entrega desejado (estimativa)*: <input type="date" name="prazo" id="prazo" required>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
